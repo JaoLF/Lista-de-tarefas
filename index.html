@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de tarefas</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    
+    <body>
+        <div class="models" style="display: none"><!--Info de estilo para um documento ou uma parte do elemento-->
+            <li class="todo__listItem"><!--li eh usado para representar um item ou faz parte de um lista-->
+                <label class="todo__listCheck"><!--label = legenda para um item-->
+                    <input class="input" type="checkbox" name="done"><!--checkbox: padrao de caixa quadradas marcadas, com uma verificacao, quando ativas, como as de formulario de gorverno-->
+                    <div class="check">&#10003;</div>
+                </label>
+                <span class="todo__listText">Exemplos</span><!--Span = container generico em linha para cconteudo fraseado-->
+            </li>
+        </div>
+        
+        <div class="todo">
+            <h1 class="todo__title">Lista de Tarefas</h1>
+            
+            <div class="todo__searchArea"><!--Pode usar __ 2x para separar palavra na classe-->
+                <div class="todo__searchIcon">+</div>
+                <input class="todo__searchInput" type="text" placeholder="Digite uma nova tarefa">
+            </div>
+            
+            <ul class="todo__list">
+                <!--eh uma lista de itens sem uma ordem, sem ser numerica e suas posisicoes, sao irrelevantes-->
+            </ul>
+        </div>
+        
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
